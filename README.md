@@ -5,6 +5,7 @@ Minimal Docker packaging for the `citygml-tools` CLI with preinstalled dependenc
 ## Table of Contents
 
 - [Requirements](#requirements)
+- [Image](#image)
 - [Quick Start](#quick-start)
 - [Run with PowerShell (Windows)](#run-with-powershell-windows)
 - [Run with Shell (Linuxmacos)](#run-with-shell-linuxmacos)
@@ -15,6 +16,14 @@ Minimal Docker packaging for the `citygml-tools` CLI with preinstalled dependenc
 
 - Docker installed and running
 - Commands executed from the repository root (where `Dockerfile` is located)
+
+## Image
+
+Prebuilt image on GHCR:
+
+```sh
+docker pull ghcr.io/csi-foxbyte/citygml-tools-docker:latest
+```
 
 ## Quick Start
 
@@ -74,13 +83,13 @@ Run the image directly on your own work folder (image must already exist).
 Linux/macOS:
 
 ```sh
-docker run --rm -v "$PWD:/work" citygml-tools:min validate /work/your-file.gml
+docker run --rm -v "$PWD:/work" ghcr.io/csi-foxbyte/citygml-tools-docker:latest validate /work/your-file.gml
 ```
 
 PowerShell:
 
 ```powershell
-docker run --rm -v "${PWD}:/work" citygml-tools:min validate /work/your-file.gml
+docker run --rm -v "${PWD}:/work" ghcr.io/csi-foxbyte/citygml-tools-docker:latest validate /work/your-file.gml
 ```
 
 ## Release Versioning
