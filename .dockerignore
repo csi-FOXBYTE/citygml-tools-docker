@@ -1,0 +1,5 @@
+.git
+.docker
+test_data
+*.log
+*.tmp
