@@ -4,6 +4,7 @@ Minimal Docker packaging for the `citygml-tools` CLI with preinstalled dependenc
 
 ## Table of Contents
 
+- [Disclaimer](#disclaimer)
 - [Requirements](#requirements)
 - [Image](#image)
 - [Quick Start](#quick-start)
@@ -11,6 +12,13 @@ Minimal Docker packaging for the `citygml-tools` CLI with preinstalled dependenc
 - [Run with Shell (Linuxmacos)](#run-with-shell-linuxmacos)
 - [Direct Docker One-Liner](#direct-docker-one-liner)
 - [Release Versioning](#release-versioning)
+
+## Disclaimer
+
+This repository only provides Docker packaging for `citygml-tools` and does not replace the upstream project documentation.
+
+- Upstream project: https://github.com/citygml4j/citygml-tools
+- Official CLI usage documentation: https://github.com/citygml4j/citygml-tools#using-citygml-tools
 
 ## Requirements
 
